@@ -7,39 +7,6 @@ if (isset($_SESSION) and isset($_SESSION['AdminUsername']) ) {
 
 require "../partials/dbAdmin.php";
 
-/*
-//Run for only one Time so that Admin info's, username and Password is stored in database 
-// after that delete these Values
-// only showns for illustrative purpose
-
-
-$name = "Shuja ur Rahman";
-$email = "shujaurrehman210@gmail.com";
-$adminPassword = "GK2225Shuja";
-$username = "bloggerShuja";
-
-$passwordHash = password_hash($adminPassword,PASSWORD_DEFAULT);
-
-$sql = "INSERT INTO $tableName(`name`,`email`,`username`,`password`)
-        VALUES('$name','$email','$username','$passwordHash')";
-
-$result = mysqli_query($conn,$sql);
-
-
-$name = "Mohd Faheem Ahmad";
-$email = "mohdfaheemahmad5@gmail.com";
-$adminPassword = "GJ8950Faheem";
-$username = "bloggerFaheem";
-
-$passwordHash = password_hash($adminPassword,PASSWORD_DEFAULT);
-
-$sql = "INSERT INTO $tableName(`name`,`email`,`username`,`password`)
-        VALUES('$name','$email','$username','$passwordHash')";
-
-$result = mysqli_query($conn,$sql);
-
-*/
-
 $boolAdminUserFound = false;
 $boolAdminPasswordMatch = false;
 $boolAdminPasswordMatch = false;
